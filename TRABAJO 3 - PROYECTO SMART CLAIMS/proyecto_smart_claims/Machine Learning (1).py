@@ -287,7 +287,7 @@ from mlflow.tracking import MlflowClient
 # Si ya existe, MLflow lo reutiliza y agrega nuevas corridas.
 # ------------------------------------------------------------
 
-EXPERIMENT_NAME = "/Users/sebastiandavilahenao@gmail.com/proyecto_smart_claims/clasificacion_danios"
+EXPERIMENT_NAME = "/Users/<tu_usuario>/proyecto_smart_claims/clasificacion_danios"
 
 mlflow.set_experiment(EXPERIMENT_NAME)
 
@@ -2256,7 +2256,7 @@ CATALOG          = "proyecto_smart_claims"
 SILVER_SCHEMA    = "silver"
 MODEL_CHECKPOINT = "google/vit-base-patch16-224"
 OUTPUT_DIR       = "/tmp/smart_claims_vit"
-EXPERIMENT_NAME  = "/Users/sebastiandavilahenao@gmail.com/proyecto_smart_claims/clasificacion_danios"
+EXPERIMENT_NAME  = "/Users/<tu_usuario>/proyecto_smart_claims/clasificacion_danios"
 NOMBRE_MODELO    = "smart_claims_clasificador_danios"
 
 # ------------------------------------------------------------
@@ -2420,7 +2420,7 @@ try:
     client.set_registered_model_tag(NOMBRE_MODELO, "proyecto",      "smart_claims")
     client.set_registered_model_tag(NOMBRE_MODELO, "tipo",          "clasificacion_imagenes")
     client.set_registered_model_tag(NOMBRE_MODELO, "modelo_base",   MODEL_CHECKPOINT)
-    client.set_registered_model_tag(NOMBRE_MODELO, "usuario",       "sebastiandavilahenao@gmail.com")
+    client.set_registered_model_tag(NOMBRE_MODELO, "autor",         "Sebastian Davila Henao")
 
     print("✅ Descripción y tags agregados.")
 
